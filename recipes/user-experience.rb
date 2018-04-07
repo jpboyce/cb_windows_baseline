@@ -4,12 +4,28 @@
 #
 # Copyright:: 2018, The Authors, All Rights Reserved.
 
-
-#- Notification Area Icons > Always show all icons
 #- Set network profile to private
 
-#- Taskbar properties > Taskbar Buttons > Never Combined
+#- Notification Area Icons > Always show all icons
+registry_key 'HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer' do
+   values [{
+     name: 'NoAutoTrayNotify',
+     type: :dword,
+     data: 1,
+   }]
+   action :create
+end
 
+#- Taskbar properties > Taskbar Buttons > Never Combined
+# Credit: http://blog.unlockforus.org/2012/05/windows-7-start-menu-taskbar-appearance.html
+registry_key 'HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced' do
+   values [{
+     name: 'TaskbarGlomLevel',
+     type: :dword,
+     data: 2,
+   }]
+   action :create
+end
 
 #- Control panel set to use Small Icons layout
 # 1 = small icons, 0 = large icons
