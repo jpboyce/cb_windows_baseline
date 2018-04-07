@@ -10,6 +10,3 @@ seven_zip_archive 'NotepadPlusPlus.zip' do
   path 'C:\Program Files (x86)\Notepad++'
   overwrite true
 end
-
-
-""
