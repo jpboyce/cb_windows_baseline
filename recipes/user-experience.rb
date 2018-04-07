@@ -4,11 +4,11 @@
 #
 # Copyright:: 2018, The Authors, All Rights Reserved.
 
-#- IE Enhanced Security Configuration: Off (or install Chrome)
-#- Taskbar properties > Taskbar Buttons > Never Combined
-#- Notification Area Icons > Always show all icons
 
+#- Notification Area Icons > Always show all icons
 #- Set network profile to private
+
+#- Taskbar properties > Taskbar Buttons > Never Combined
 
 
 #- Control panel set to use Small Icons layout
@@ -28,6 +28,28 @@ registry_key 'HKEY_CURRENT_USER\Console' do
      name: 'WindowSize',
      type: :dword,
      data: 2d0096,
+   }]
+   action :create
+end
+
+# IE Enhanced Security Configuration for Admins: Off
+# Credit: https://4sysops.com/archives/four-ways-to-disable-internet-explorer-enhanced-security-configuration-ie-esc/
+registry_key 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}' do
+   values [{
+     name: 'IsInstalled',
+     type: :dword,
+     data: 0,
+   }]
+   action :create
+end
+
+# IE Enhanced Security Configuration for Users: Off
+# Credit: https://4sysops.com/archives/four-ways-to-disable-internet-explorer-enhanced-security-configuration-ie-esc/
+registry_key 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}' do
+   values [{
+     name: 'IsInstalled',
+     type: :dword,
+     data: 0,
    }]
    action :create
 end
