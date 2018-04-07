@@ -15,3 +15,7 @@ registry_key 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Serve
 end
 
 # Enable Remote Management
+execute 'Enable Remote Management' do
+  command 'Configure-SMRemoting.exe -GET & Configure-SMRemoting.exe -ENABLE & Configure-SMRemoting.exe -GET'
+  action :run
+end
