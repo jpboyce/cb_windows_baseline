@@ -22,6 +22,9 @@ provisioner:
 platforms:
   - name: windows-2016
 
+verifier:
+  name: inspec
+
 suites:
   - name: sysinternals
     run_list:
