@@ -15,6 +15,7 @@ provisioner:
   name: chef_zero
   deprecations_as_errors: true
   product_name: chef
+  product_version: 14.12.3
   channel: current
   chef_license: accept
 
