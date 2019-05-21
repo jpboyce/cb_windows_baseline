@@ -24,7 +24,7 @@ registry_key 'HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explor
     type: :dword,
     data: 2,
   }]
-   action :create
+  action :create
 end
 
 #- Control panel set to use Small Icons layout
@@ -35,7 +35,7 @@ registry_key 'HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explor
     type: :dword,
     data: 1,
   }]
-   action :create
+  action :create
 end
 
 # cmd.exe layout - width to 150, height to 45
@@ -45,7 +45,7 @@ registry_key 'HKEY_CURRENT_USER\Console' do
     type: :dword,
     data: '2d0096',
   }]
-   action :create
+  action :create
 end
 
 # IE Enhanced Security Configuration for Admins: Off
@@ -56,7 +56,7 @@ registry_key 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Compo
     type: :dword,
     data: 0,
   }]
-   action :create
+  action :create
 end
 
 # IE Enhanced Security Configuration for Users: Off
@@ -67,5 +67,5 @@ registry_key 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Compo
     type: :dword,
     data: 0,
   }]
-   action :create
+  action :create
 end
