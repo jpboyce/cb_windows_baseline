@@ -12,7 +12,7 @@ registry_key 'HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Polici
      name: 'NoAutoTrayNotify',
      type: :dword,
      data: 1,
-   }]
+  }]
    action :create
 end
 
@@ -23,7 +23,7 @@ registry_key 'HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explor
      name: 'TaskbarGlomLevel',
      type: :dword,
      data: 2,
-   }]
+  }]
    action :create
 end
 
@@ -34,7 +34,7 @@ registry_key 'HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explor
      name: 'AllItemsIconView',
      type: :dword,
      data: 1,
-   }]
+  }]
    action :create
 end
 
@@ -44,7 +44,7 @@ registry_key 'HKEY_CURRENT_USER\Console' do
      name: 'WindowSize',
      type: :dword,
      data: '2d0096',
-   }]
+  }]
    action :create
 end
 
@@ -55,7 +55,7 @@ registry_key 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Compo
      name: 'IsInstalled',
      type: :dword,
      data: 0,
-   }]
+  }]
    action :create
 end
 
@@ -66,6 +66,6 @@ registry_key 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Compo
      name: 'IsInstalled',
      type: :dword,
      data: 0,
-   }]
+  }]
    action :create
 end
