@@ -18,3 +18,7 @@ issues_url 'https://github.com/jpboyce/cb_windows_baseline/issues'
 # a Supermarket.
 #
 source_url 'https://github.com/jpboyce/cb_windows_baseline'
+
+supports 'windows'
+depends 'windows'
+depends 'seven_zip'
