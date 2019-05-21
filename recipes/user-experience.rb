@@ -43,7 +43,7 @@ registry_key 'HKEY_CURRENT_USER\Console' do
    values [{
      name: 'WindowSize',
      type: :dword,
-     data: 2d0096,
+     data: '2d0096',
    }]
    action :create
 end

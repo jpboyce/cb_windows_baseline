@@ -7,10 +7,10 @@
 # Download and install sys internals
 
 # Download sys internals from internet
-#remote_file 'file:///c:/temp/SysInternalsSuite.zip' do
+# remote_file 'file:///c:/temp/SysInternalsSuite.zip' do
 #  source 'https://download.sysinternals.com/files/SysinternalsSuite.zip'
 #  action :create
-#end
+# end
 
 # Download and Unzip the file
 seven_zip_archive 'SysInternals.zip' do

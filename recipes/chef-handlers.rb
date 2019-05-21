@@ -2,7 +2,7 @@
 # Adding certain handlers in
 
 # Include chef_handler
-include_recipe "chef_handler"
+include_recipe 'chef_handler'
 
 # Install the gem
 chef_gem 'chef-handler-elapsed-time'
