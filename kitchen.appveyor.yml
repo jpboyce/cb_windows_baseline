@@ -26,6 +26,6 @@ verifier:
   name: inspec
 
 suites:
-  - name: sysinternals
+  - name: default
     run_list:
       - recipe[cb_windows_baseline::app-sysinternals]
